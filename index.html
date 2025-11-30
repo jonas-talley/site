@@ -10,8 +10,13 @@
   <!-- Header -->
   <header class="header">
     <div class="container">
+      <!-- Profile Photo: Updated path to 'images' folder -->
+      <img src="images/profile.jpg" alt="Jonas Talley" class="profile-photo">
+      
       <h1 class="name">Jonas Talley</h1>
       <p class="title">Mechanical Engineer</p>
+
+      <a href="mailto:contact@jonastalley.com" class="contact-link header-contact">contact@jonastalley.com</a>
     </div>
   </header>
 
@@ -21,9 +26,9 @@
       <h2>About Me</h2>
       <p>
         I am a Mechanical Engineer combining process improvement with practical, hands-on design. 
-        With experience spanning aerospace manufacturing, semiconductor fabrication, and R&D, I specialize in 
-        bridging the gap between engineering analysis and production reality. I am passionate about solving 
-        complex challenges and building robust, reliable systems.
+        With experience in aerospace manufacturing, semiconductor fabrication, and R&D, I specialize in 
+        bridging the gap between engineering and production. I am passionate about solving 
+        complex hardware challenges and building reliable systems.
       </p>
     </div>
   </section>
@@ -54,7 +59,8 @@
         <h3>Process & Equipment Engineering Support</h3>
         <p class="meta">Micron Technology | Summer 2025</p>
         <p>
-          Authored comprehensive Standard Operating Procedures (SOPs) that resolved software failures, 
+          Developed and standardized critical equipment recovery procedures for high-precision semiconductor tools. 
+          Authored comprehensive Standard Operating Procedures (SOPs) that resolved recurring software failures, 
           significantly reducing equipment downtime and improving maintenance consistency across shifts.
         </p>
       </div>
@@ -64,9 +70,9 @@
         <p class="meta">The Boeing Company | 2023 - 2024</p>
         <p>
           Led continuous improvement initiatives for the 767 program using Lean methodologies. 
-          Facilitated Value Stream Mapping projects that identified production bottlenecks, resulting in a reduction 
-          of over 200 hours of touch-time per aircraft. Conducted root cause analysis on recurring component defects 
-          to implement permanent engineering solutions.
+          Facilitated Value Stream Mapping projects that identified production bottlenecks, resulting in 
+          a significant reduction of touch-time per aircraft. Conducted root cause analysis on recurring 
+          component defects to implement permanent engineering solutions.
         </p>
       </div>
 
@@ -77,6 +83,24 @@
           Redesigned a modular robotic platform specifically for in-house additive manufacturing. 
           Applied Design for Manufacturability (DFM) principles to optimize components for 3D printing, 
           achieving a 75% reduction in unit cost and decreasing part lead times from days to hours.
+        </p>
+      </div>
+
+      <div class="entry">
+        <h3>Drafting and Production Intern</h3>
+        <p class="meta">Northwest Steel Fab | Summer 2021</p>
+        <p>
+          Operated a 5-axis plasma robot for the fabrication of structural steel. Generated detailed 
+          building drawings in Tekla.
+        </p>
+      </div>
+
+      <div class="entry">
+        <h3>Production Intern</h3>
+        <p class="meta">IDL Industries | Summer 2020</p>
+        <p>
+          Trained 5 new employees to operate CNC machines safely and efficiently.
+          Replaced ad-hoc maintenance system with a documented checklist for all machines.
         </p>
       </div>
 
@@ -113,8 +137,13 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <p>&copy; 2025 Jonas Talley. All rights reserved.</p>
+      <p class="footer-contact"><a href="mailto:contact@jonastalley.com">contact@jonastalley.com</a></p>
+      <p>&copy; <span id="year">2025</span> Jonas Talley. All rights reserved.</p>
     </div>
   </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
