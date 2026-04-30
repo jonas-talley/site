@@ -1,0 +1,38 @@
+:root {
+  --primary-color: #5f0808; /* Deep red from main site */
+  --accent-color: #007aff;  /* iOS blue from math site */
+  --bg-color: #f9f9f9;
+  --text-color: #333;
+  --header-text: #fff;
+  --success-color: #34c759;
+  --error-color: #ff3b30;
+  --border-radius: 8px;
+  --transition: all 0.2s ease;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #1c1c1e;
+    --text-color: #f2f2f7;
+    --header-text: #fff;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
